@@ -1,0 +1,99 @@
+.set-insta-photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .single-photo{
+        margin: 15px;
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+}
+
+.introduction-photo-wrapper{
+    background-color: $gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 80px;
+    
+    .intro-heading-title{
+        font-size: 7em;
+        margin-bottom: 80px;
+    }
+
+    .intro-subheading{
+        font-size: 3em;
+        margin-bottom: 80px;
+    }
+
+    .intro-bio{
+        font-size: 1.2em;
+    }
+
+    @media (max-width: 48em){
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .intro-heading-title{
+            font-size: 4em;
+        }
+
+        .right-side-intro img{
+            margin-top: 30px;
+            width: 50%;
+        }
+    }
+}
+
+.homepage-our-story-photo-wrapper{
+    width: 100%;
+    height:500px;
+    background-position: center;
+}
+
+.all-quote-wrapper{
+    display: flex;
+    justify-content: center;
+
+    .scott-jurek-quote{
+        text-align: center;
+        width: 60vw;
+
+        .actual-quote{
+            font-size: 2em;
+            margin-bottom: 40px ;
+        }
+
+        .scott-jurek{
+            font-size: 3em;
+        }
+    }
+}
+
+.alex-runs-for-wrapper{
+    margin-top: 50px;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height:600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .8;
+
+    h1{
+        color: $white;
+        text-shadow: 4px 4px 5px #000000;
+        font-size: 4em;
+    }
+
+    img{
+        width: 20%;
+    }
+}

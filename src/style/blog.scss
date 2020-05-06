@@ -1,0 +1,42 @@
+.full-blog-page-container{
+    display: flex;
+    justify-content: center;
+}
+
+.blogs-page-container{
+    width: 700px;
+
+
+    .blogs-page-title a{
+        color: $white;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            color: rgb(153, 153, 153);
+        }
+    }
+
+    .blogs-page-content span a{
+        color: teal;
+    }
+
+    .blogs-page-featured-image img{
+        margin-top: 50px;
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 48em){
+        text-align: center;
+    }
+} 
+
+.content-loader{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    color: teal;
+    font-size: 10em;
+}

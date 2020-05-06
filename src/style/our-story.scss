@@ -1,0 +1,16 @@
+.our-story-container{
+    display:flex;
+    justify-content: center;
+
+    .our-story-content-wrapper{
+        width: 60%;
+        text-align: center;
+    }
+
+    .our-story-content-wrapper img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 300px;
+    }
+}

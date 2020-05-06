@@ -1,0 +1,34 @@
+.login-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    .login-left-side img{
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 450px;
+        height: 600px;
+    }
+
+    .login-right-side{
+        display: grid;
+    }
+
+}
+
+@media (max-width:48em){
+    .login-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        .login-right-side{
+            justify-items: center;
+
+        h1{
+            text-align: center;
+        }
+        }
+    }
+
+}

@@ -1,0 +1,124 @@
+body{
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: $black;
+    color: $white;
+}
+
+.all-nav-wrapper {
+    background-color: $black;
+    color: $white;
+
+    h1{
+        margin-left: 50px;
+    }
+    
+
+    .navbar-links-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 0px;
+        justify-items: space-between;
+        align-items: center;
+        background-color: $gray;
+        
+
+        .left-side-nav-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            margin-left: 50px;
+
+            a{
+                color: $white;
+                text-decoration: none;
+                transition: 0.3s ease-in-out;
+                padding: 0px 15px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            @media (max-width: 48em){
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        .right-side-nav-wrapper{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 50px;
+
+            .nav-right{
+                padding: 0px 15px;
+            }
+        }
+        @media (max-width: 48em){
+            grid-template-columns: 1fr;
+            justify-content: center;
+            gap: 25px;
+        }
+    }
+
+}
+
+.all-footer-but-copyright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+    .rwtw-footer-left{
+        display: grid;
+        justify-items: center;
+    }
+
+    .rwtw-footer-right{
+        input{
+            height: 50px;
+            width: 400px;
+            font-size: 25px;
+            background-color: $black;
+            color: $white;
+            text-align: center;
+        }
+
+        button{
+            height: 56px;
+            width: 150px;
+            background-color: $white;
+            color: $black;
+            font-size: 25px;
+            margin-left: 20px;
+
+        }
+    }
+
+    @media (max-width: 48em){
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+.copyright-links-wrapper{
+    font-size: .9em;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: $gray;
+
+    .copyright-links{
+        display: flex;
+        width:200px;
+        justify-content: space-evenly;
+    }
+}
+
+
+    
+    
+
